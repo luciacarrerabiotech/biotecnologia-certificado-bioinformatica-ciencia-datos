@@ -1,0 +1,379 @@
+    1  clear
+    2  whoami
+    3  pwd
+    4  cd fcb_material_practica1
+    5  ls
+    6  ls-lh
+    7  ls -lh
+    8  ls -lha
+    9  ls -lah
+   10  history 
+   11  history
+   12  history > historial_comandos_061026.txt
+   13  ls
+   14  cd ..
+   15  ls
+   16  mkdir historial_comandos
+   17  ls
+   18  history > historial_comandos/comandos_061026.txt
+   19  cd historial_comandos/
+   20  ls
+   21  cd ..
+   22  cd fcb_material_practica1/
+   23  clear
+   24  pwd
+   25  nano
+   26  ls
+   27  nano
+   28  ls
+   29  cd tema 2
+   30  cd /tema 2
+   31  lu.txt
+   32  clear
+   33  nano
+   34  cat lu.txt
+   35  cat sec_DNA_cat.fasta
+   36  clear
+   37  cat sec_DNA_cat.fasta
+   38  clear
+   39  cat>sec_DNA_cat.fasta
+   40  wc-l sec_DNA_cat.fasta
+   41  wc-lwc sec_DNA_cat.fasta
+   42  wc -l sec_DNA.fasta 
+   43  file sec_DNA_cat.fasta
+   44  head sec_DNA_cat.fasta 
+   45  head -1 sec_DNA_cat.fasta 
+   46  diff sec_DNA_cat.fasta sec_DNA.
+   47  diff sec_DNA_cat.fasta sec_DNA.fasta
+   48  cd tema 2
+   49  clear
+   50  cd tema2/
+   51  cat Pacifi2013_data.csv
+   52  grep vombatidae Pacifi2013_datay.csv
+   53  grep Vombatidae Pacifi2013_data.csv
+   54  cat Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr ";" " " | sort -n -k 6 > Bodymass_file.csv
+   55  ls 
+   56  greaf Vombatidae Bodymass_file.csv 
+   57  grep Vombatidae Bodymass_file.csv 
+   58  grep -c Vombatidae Bodymass_file.csv 
+   59  grep Bos Bodymass_file.csv 
+   60  grep -c Bos Bodymass_file.csv 
+   61  grep Bos  Bodymass_file.csv 
+   62  grep -w Bos Bodymass_file.csv 
+   63  # -c cuenta, -w fuerza a que sean palabras completas
+   64  # -c cuenta, -w fuerza a que sean palabras completas -i ignora maysculas y minsculas
+   65  history
+   66  history > historial_271026
+   67  ls
+   68  # para ver lo de antes y despues tambien, -B before -A after
+   69  grep -B 2 -A 2 Gorilla gorilla Bodymass_file.csv 
+   70  history > historial_271026 
+   71  grep -B 2 _a 2 "Gorilla gorilla" Bodymass_file.csv 
+   72  grep -B 2 -A 2 "Gorilla gorilla" Bodymass_file.csv 
+   73  # poner comillas, si no, se hacer raro 
+   74  history > historial_271026 
+   75  # si quiero buscar dos patrones pongo "Gorilla\|Pan" Bodymass_file.csv 
+   76  # es decir, contrabarra y | 
+   77  # grep "Gorilla\|Pan" Bodymass_file.csv 
+   78  history > historial_271026 
+   79  cat historial_271026 
+   80  # r read, w write x execute - no concedido
+   81  # 1 propietario, 2 grupo 2 permisos
+   82  # 1 propietario, 2 grupo 3  permisos para cambiarlos chmod change mod, llamas al comando, arg 1, accion, arg 2 accion y arg 3 accion
+   83  history > historial_271026 
+   84  touch permisos.txt
+   85  ls -l
+   86  chmod u=rwx,g=rx,o=r permisos.txt 
+   87  ls -l
+   88  # para cambiar, como en el anterior, si es quitar se pone u=-x y si es poner con un +
+   89  history > historial_271026 
+   90  cat historial_271026 
+   91  # para acceder a superuser pongo  sudo
+   92  sudo
+   93  #script archivo texto plano que contiene una lista ordenada y coherente de comands para la resolucin de un problema especfico. Este archivo se puede reutilizar. 
+   94  history > historial_271026 
+   95  clear
+   96  nano ExtractBodyM.sh # editor de texto y va a crearlo
+   97  ls -l
+   98  bash ExtractBodyM.sh
+   99  ls -l
+  100  history > historial_271026 
+  101  # para generalizar un cdigo tengo que ponet un dollar y despues del bashponer los archivos deseados
+  102  nano ExtractBodyM.sh
+  103  bash Pacifici2013_data.csv BodyMass_file_script.csv 
+  104  bash Pacififici2013_data.csv BodyMass_file_script.csv
+  105  bash Pacififici2013_data.csv BodyMass_file2
+  106  ls -l,
+  107  ls -l
+  108  bash Pacififici2013_data.csv BodyMass_file2
+  109  bash ExtractBodyM.sh Pacifici2013_data.csv BodyMass_file2
+  110  ls -l
+  111  # primera linea !/bin/bash
+  112  # ahora para ejecutar no hara falta que llame a bash, solo ./ y el nombre del script
+  113  history > historial_271026 
+  114  clear
+  115  cd tema2/
+  116  clear
+  117  cd .cache .config fcb_material_practica1 .gnupg historial_comandos .local proyecto_biotec tema2 te
+  118  cd tema2/
+  119  ls *.txt
+  120  ls
+  121  ls *.csv 
+  122  #nos da todos los archivos de ese formato 
+  123  # el interrogante quiere decir el caracter que sea
+  124  cd pacifici2013_data.csv
+  125  cd
+  126  cd tema2/
+  127  clear
+  128  cd proyecto_biotec/
+  129  cd documentacion/
+  130  cat > conceptos_clave.txt
+  131  rm conceptos_clave.txt 
+  132  ls
+  133  nano conceptos_clave.txt
+  134  clear
+  135  cd proyecto_biotec/
+  136  cd documentacion/
+  137  ls
+  138  nano conceptos_clave.txt.save 
+  139  fcb_alumno04@UCVVBox:~$
+  140  ~$
+  141  clear
+  142  cd proyecto_biotec/
+  143  cd documentacion/
+  144  ls 
+  145  rm conceptos_clave.txt.save 
+  146  ls
+  147  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  148  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  149  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  150  31: orden no encontrada
+  151  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  152  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  153  fcb_alumno04@UCVVBox:~$ ~$
+  154  ~$: orden no encontrada
+  155  fcb_alumno04@UCVVBox:~$ ~$
+  156  ~$: orden no encontrada
+  157  fcb_alumno04@UCVVBox:~$ ~$
+  158  ~$: orden no encontrada
+  159  fcb_alumno04@UCVVBox:~$ ~$
+  160  ~$: orden no encontrada
+  161  fcb_alumno04@UCVVBox:~$ ~$
+  162  ~$: orden no encontrada
+  163  fcb_alumno04@UCVVBox:~$ ~$
+  164  ~$: orden no encontrada
+  165  fcb_alumno04@UCVVBox:~$ ~$
+  166  ~$: orden no encontrada
+  167  fcb_alumno04@UCVVBox:~$ ~$
+  168  ~$: orden no encontrada
+  169  fcb_alumno04@UCVVBox:~$ ~$
+  170  ~$: orden no encontrada
+  171  fcb_alumno04@UCVVBox:~$
+  172  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  173  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  174  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  175  31: orden no encontrada
+  176  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  177  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  178  fcb_alumno04@UCVVBox:~$ ~$
+  179  ~$: orden no encontrada
+  180  fcb_alumno04@UCVVBox:~$ ~$
+  181  ~$: orden no encontrada
+  182  fcb_alumno04@UCVVBox:~$ ~$
+  183  ~$: orden no encontrada
+  184  fcb_alumno04@UCVVBox:~$ ~$
+  185  ~$: orden no encontrada
+  186  fcb_alumno04@UCVVBox:~$ ~$
+  187  ~$: orden no encontrada
+  188  fcb_alumno04@UCVVBox:~$ ~$
+  189  ~$: orden no encontrada
+  190  fcb_alumno04@UCVVBox:~$ ~$
+  191  ~$: orden no encontrada
+  192  fcb_alumno04@UCVVBox:~$ ~$
+  193  ~$: orden no encontrada
+  194  fcb_alumno04@UCVVBox:~$ ~$
+  195  ~$: orden no encontrada
+  196  fcb_alumno04@UCVVBox:~$
+  197  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  198  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  199  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  200  31: orden no encontrada
+  201  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  202  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  203  fcb_alumno04@UCVVBox:~$ ~$
+  204  ~$: orden no encontrada
+  205  fcb_alumno04@UCVVBox:~$ ~$
+  206  ~$: orden no encontrada
+  207  fcb_alumno04@UCVVBox:~$ ~$
+  208  ~$: orden no encontrada
+  209  fcb_alumno04@UCVVBox:~$ ~$
+  210  ~$: orden no encontrada
+  211  fcb_alumno04@UCVVBox:~$ ~$
+  212  ~$: orden no encontrada
+  213  fcb_alumno04@UCVVBox:~$ ~$
+  214  ~$: orden no encontrada
+  215  fcb_alumno04@UCVVBox:~$ ~$
+  216  ~$: orden no encontrada
+  217  fcb_alumno04@UCVVBox:~$ ~$
+  218  ~$: orden no encontrada
+  219  fcb_alumno04@UCVVBox:~$ ~$
+  220  ~$: orden no encontrada
+  221  fcb_alumno04@UCVVBox:~$
+  222  fcb_alumno04@UCVVBox:~/proyecto_biotec/documentacion$
+  223  cat > conceptos_clave.txt
+  224  ls 
+  225  rm conceptos_clave.txt 
+  226  cat > conceptos_clave.txt
+  227  cat conceptos_clave.txt 
+  228  cd ..
+  229  cd scripts/
+  230  history > historial_comandos_B.txt
+  231  ls
+  232  cat historial_comandos_B.txt 
+  233  cd
+  234  cp -r fcb_material_practica1/ proyecto_biotec/ 
+  235  cd proyecto_biotec/
+  236  ls
+  237  cp -r fcb_material_practica1/ datos_crudos/
+  238  cd datos_crudos/
+  239  ls
+  240  cd ..
+  241  rm fcb_material_practica1/
+  242  ls
+  243  rm -r fcb_material_practica1/
+  244  ls
+  245  cd datos_crudos/
+  246  ls
+  247  cp -r fcb_material_practica1/ proyecto_biotec/
+  248  fcb_alumno04@UCVVBox:~$ cd proyecto_biotec/
+  249  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  250  datos_crudos  datos_procesados  documentacion  fcb_material_practica1  resultados  scripts
+  251  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cp -r fcb_material_practica1/ datos_crudos/
+  252  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cd datos_crudos/
+  253  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ ls
+  254  fcb_material_practica1  informe_datos.txt
+  255  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ cd ..
+  256  fcb_alumno04@UCVVBox:~/proyecto_biotec$ rm fcb_material_practica1/
+  257  rm: no se puede borrar 'fcb_material_practica1/': Es un directorio
+  258  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  259  datos_crudos  datos_procesados  documentacion  fcb_material_practica1  resultados  scripts
+  260  fcb_alumno04@UCVVBox:~/proyecto_biotec$ rm -r fcb_material_practica1/
+  261  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  262  datos_crudos  datos_procesados  documentacion  resultados  scripts
+  263  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cd datos_crudos/
+  264  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ ls
+  265  fcb_material_practica1  informe_datos.txt
+  266  cd proyecto_biotec/
+  267  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  268  datos_crudos  datos_procesados  documentacion  fcb_material_practica1  resultados  scripts
+  269  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cp -r fcb_material_practica1/ datos_crudos/
+  270  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cd datos_crudos/
+  271  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ ls
+  272  fcb_material_practica1  informe_datos.txt
+  273  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ cd ..
+  274  fcb_alumno04@UCVVBox:~/proyecto_biotec$ rm fcb_material_practica1/
+  275  rm: no se puede borrar 'fcb_material_practica1/': Es un directorio
+  276  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  277  datos_crudos  datos_procesados  documentacion  fcb_material_practica1  resultados  scripts
+  278  fcb_alumno04@UCVVBox:~/proyecto_biotec$ rm -r fcb_material_practica1/
+  279  fcb_alumno04@UCVVBox:~/proyecto_biotec$ ls
+  280  datos_crudos  datos_procesados  documentacion  resultados  scripts
+  281  fcb_alumno04@UCVVBox:~/proyecto_biotec$ cd datos_crudos/
+  282  fcb_alumno04@UCVVBox:~/proyecto_biotec/datos_crudos$ ls
+  283  fcb_material_practica1  informe_datos.txt
+  284  cd ..
+  285  ls
+  286  rm -r proyecto_biotec/
+  287  ls
+  288  cd ..
+  289  cd datos_crudos/
+  290  cd fcb_material_practica1/
+  291  clear
+  292  cd proyecto_biotec/
+  293  ls
+  294  cd datos_crudos/
+  295  cd fcb_material_practica1/
+  296  ls
+  297  cat datos_muestras.txt 
+  298  id_muestra      especie tipo_muestra    concentracion_ng_ul     estado
+  299  M001    Saccharomyces_cerevisiae        ARN     153.8   control
+  300  M002    Escherichia_coli        ADN     240.2   tratamiento
+  301  M003    Mus_musculus    ADN     152.7   control
+  302  M004    Homo_sapiens_cultivo    proteina        226.2   tratamiento
+  303  M005    Escherichia_coli        ADN     171.8   control
+  304  M006    Mus_musculus    ADN     421.0   control
+  305  M007    Danio_rerio     ADN     139.1   tratamiento
+  306  M008    Escherichia_coli        ARN     61.0    control
+  307  M009    Mus_musculus    proteina        197.2   control
+  308  M010    Arabidopsis_thaliana    proteina        155.3   control
+  309  M011    Drosophila_melanogaster ADN     283.6   control
+  310  M012    Escherichia_coli        ADN     20.6    control
+  311  M013    Danio_rerio     proteina        38.3    tratamiento
+  312  M014    Escherichia_coli        ARN     305.4   control
+  313  M015    Mus_musculus    ARN     39.0    tratamiento
+  314  M016    Danio_rerio     proteina        439.2   control
+  315  M017    Danio_rerio     ADN     465.0   tratamiento
+  316  M018    Mus_musculus    ARN     444.4   control
+  317  M019    Mus_musculus    ADN     171.1   control
+  318  M020    Escherichia_coli        ADN     163.5   tratamiento
+  319  M021    Arabidopsis_thaliana    proteina        221.1   tratamiento
+  320  M022    Homo_sapiens_cultivo    ADN     439.0   tratamiento
+  321  M023    Mus_musculus    ARN     207.6   tratamiento
+  322  M024    Drosophila_melanogaster proteina        265.2   control
+  323  M025    Drosophila_melanogaster proteina        93.7    control
+  324  M026    Drosophila_melanogaster proteina        178.4   control
+  325  M027    Escherichia_coli        ARN     291.8   control
+  326  M028    Arabidopsis_thaliana    ARN     20.2    tratamiento
+  327  M029    Mus_musculus    proteina        213.4   tratamiento
+  328  M030    Danio_rerio     ARN     138.8   control
+  329  M031    Drosophila_melanogaster ADN     365.1   tratamiento
+  330  M032    Escherichia_coli        ARN     125.0   tratamiento
+  331  M033    Arabidopsis_thaliana    ADN     233.5   control
+  332  M034    Mus_musculus    proteina        78.8    tratamiento
+  333  M035    Arabidopsis_thaliana    proteina        81.3    tratamiento
+  334  M036    Mus_musculus    ADN     443.7   control
+  335  M037    Saccharomyces_cerevisiae        proteina        26.8    control
+  336  M038    Saccharomyces_cerevisiae        ADN     296.8   tratamiento
+  337  M039    Danio_rerio     ARN     226.1   control
+  338  M040    Arabidopsis_thaliana    ARN     323.8   control
+  339  M041    Mus_musculus    proteina        120.4   control
+  340  M042    Homo_sapiens_cultivo    ARN     194.4   control
+  341  M043    Escherichia_coli        ARN     312.8   tratamiento
+  342  M044    Saccharomyces_cerevisiae        ARN     99.8    control
+  343  M045    Drosophila_melanogaster ARN     139.2   tratamiento
+  344  M046    Escherichia_coli        ADN     280.1   control
+  345  M047    Drosophila_melanogaster ADN     353.2   control
+  346  M048    Escherichia_coli        ADN     432.5   control
+  347  M049    Danio_rerio     ARN     51.4    tratamiento
+  348  head - n 5
+  349  head - n 5 datos_muestras.txt 
+  350  head -n 5 datos_muestras.txt 
+  351  tail -n 5 datos_muestras.txt 
+  352  wc -l datos_muestras.txt 
+  353  grep -c control datos_muestras.txt 
+  354  grep Escherichia_coli datos_muestras.txt 
+  355  grep -c Escherichia_coli datos_muestras.txt 
+  356  grep -c Mus_musculus datos_muestras.txt 
+  357  grep -c homo_sapiens_cultivo datos_muestras.txt 
+  358  grep -c Homo_sapiens_cultivo datos_muestras.txt 
+  359  grep -c "^>" secuencias_DNA.fasta 
+  360  cd ..
+  361  mkdir temp_borrar
+  362  cd temp_borrar/
+  363  touch archivo_borrar.txt
+  364  ls
+  365  cd ..
+  366  rmdir temp_borrar/
+  367  rm -r temp_borrar/
+  368  ls
+  369  history > historial_completo_comandos_C.txt
+  370  rm historial_completo_comandos_C.txt 
+  371  ls
+  372  cd scripts/
+  373  history > historial_completo_comandos_C.txt
+  374  nano historial_comandos_C.txt
+  375  ls
+  376  cat historial_completo_comandos_C.txt 
+  377  ls
+  378  rm historial_completo_comandos_C.txt 
+  379  history > historial_comandos_C.txt

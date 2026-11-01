@@ -1,0 +1,225 @@
+    1  clear
+    2  whoami
+    3  pwd
+    4  cd fcb_material_practica1
+    5  ls
+    6  ls-lh
+    7  ls -lh
+    8  ls -lha
+    9  ls -lah
+   10  history 
+   11  history
+   12  history > historial_comandos_061026.txt
+   13  ls
+   14  cd ..
+   15  ls
+   16  mkdir historial_comandos
+   17  ls
+   18  history > historial_comandos/comandos_061026.txt
+   19  cd historial_comandos/
+   20  ls
+   21  cd ..
+   22  cd fcb_material_practica1/
+   23  clear
+   24  pwd
+   25  nano
+   26  ls
+   27  nano
+   28  ls
+   29  cd tema 2
+   30  cd /tema 2
+   31  lu.txt
+   32  clear
+   33  nano
+   34  cat lu.txt
+   35  cat sec_DNA_cat.fasta
+   36  clear
+   37  cat sec_DNA_cat.fasta
+   38  clear
+   39  cat>sec_DNA_cat.fasta
+   40  wc-l sec_DNA_cat.fasta
+   41  wc-lwc sec_DNA_cat.fasta
+   42  wc -l sec_DNA.fasta 
+   43  file sec_DNA_cat.fasta
+   44  head sec_DNA_cat.fasta 
+   45  head -1 sec_DNA_cat.fasta 
+   46  diff sec_DNA_cat.fasta sec_DNA.
+   47  diff sec_DNA_cat.fasta sec_DNA.fasta
+   48  cd tema 2
+   49  clear
+   50  cd tema2/
+   51  cat Pacifi2013_data.csv
+   52  grep vombatidae Pacifi2013_datay.csv
+   53  grep Vombatidae Pacifi2013_data.csv
+   54  cat Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr ";" " " | sort -n -k 6 > Bodymass_file.csv
+   55  ls 
+   56  greaf Vombatidae Bodymass_file.csv 
+   57  grep Vombatidae Bodymass_file.csv 
+   58  grep -c Vombatidae Bodymass_file.csv 
+   59  grep Bos Bodymass_file.csv 
+   60  grep -c Bos Bodymass_file.csv 
+   61  grep Bos  Bodymass_file.csv 
+   62  grep -w Bos Bodymass_file.csv 
+   63  # -c cuenta, -w fuerza a que sean palabras completas
+   64  # -c cuenta, -w fuerza a que sean palabras completas -i ignora maysculas y minsculas
+   65  history
+   66  history > historial_271026
+   67  ls
+   68  # para ver lo de antes y despues tambien, -B before -A after
+   69  grep -B 2 -A 2 Gorilla gorilla Bodymass_file.csv 
+   70  history > historial_271026 
+   71  grep -B 2 _a 2 "Gorilla gorilla" Bodymass_file.csv 
+   72  grep -B 2 -A 2 "Gorilla gorilla" Bodymass_file.csv 
+   73  # poner comillas, si no, se hacer raro 
+   74  history > historial_271026 
+   75  # si quiero buscar dos patrones pongo "Gorilla\|Pan" Bodymass_file.csv 
+   76  # es decir, contrabarra y | 
+   77  # grep "Gorilla\|Pan" Bodymass_file.csv 
+   78  history > historial_271026 
+   79  cat historial_271026 
+   80  # r read, w write x execute - no concedido
+   81  # 1 propietario, 2 grupo 2 permisos
+   82  # 1 propietario, 2 grupo 3  permisos para cambiarlos chmod change mod, llamas al comando, arg 1, accion, arg 2 accion y arg 3 accion
+   83  history > historial_271026 
+   84  touch permisos.txt
+   85  ls -l
+   86  chmod u=rwx,g=rx,o=r permisos.txt 
+   87  ls -l
+   88  # para cambiar, como en el anterior, si es quitar se pone u=-x y si es poner con un +
+   89  history > historial_271026 
+   90  cat historial_271026 
+   91  # para acceder a superuser pongo  sudo
+   92  sudo
+   93  #script archivo texto plano que contiene una lista ordenada y coherente de comands para la resolucin de un problema especfico. Este archivo se puede reutilizar. 
+   94  history > historial_271026 
+   95  clear
+   96  nano ExtractBodyM.sh # editor de texto y va a crearlo
+   97  ls -l
+   98  bash ExtractBodyM.sh
+   99  ls -l
+  100  history > historial_271026 
+  101  # para generalizar un cdigo tengo que ponet un dollar y despues del bashponer los archivos deseados
+  102  nano ExtractBodyM.sh
+  103  bash Pacifici2013_data.csv BodyMass_file_script.csv 
+  104  bash Pacififici2013_data.csv BodyMass_file_script.csv
+  105  bash Pacififici2013_data.csv BodyMass_file2
+  106  ls -l,
+  107  ls -l
+  108  bash Pacififici2013_data.csv BodyMass_file2
+  109  bash ExtractBodyM.sh Pacifici2013_data.csv BodyMass_file2
+  110  ls -l
+  111  # primera linea !/bin/bash
+  112  # ahora para ejecutar no hara falta que llame a bash, solo ./ y el nombre del script
+  113  history > historial_271026 
+  114  clear
+  115  cd tema2/
+  116  clear
+  117  cd .cache .config fcb_material_practica1 .gnupg historial_comandos .local proyecto_biotec tema2 te
+  118  cd tema2/
+  119  ls *.txt
+  120  ls
+  121  ls *.csv 
+  122  #nos da todos los archivos de ese formato 
+  123  # el interrogante quiere decir el caracter que sea
+  124  cd pacifici2013_data.csv
+  125  cd
+  126  cd tema2/
+  127  clear
+  128  cd proyecto_biotec/
+  129  cd documentacion/
+  130  cat > conceptos_clave.txt
+  131  rm conceptos_clave.txt 
+  132  ls
+  133  nano conceptos_clave.txt
+  134  fcb_alumno04@UCVVBox:~$
+  135  ~$
+  136  clear
+  137  cd proyecto_biotec/
+  138  cd documentacion/
+  139  ls 
+  140  rm conceptos_clave.txt.save 
+  141  ls
+  142  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  143  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  144  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  145  31: orden no encontrada
+  146  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  147  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  148  fcb_alumno04@UCVVBox:~$ ~$
+  149  ~$: orden no encontrada
+  150  fcb_alumno04@UCVVBox:~$ ~$
+  151  ~$: orden no encontrada
+  152  fcb_alumno04@UCVVBox:~$ ~$
+  153  ~$: orden no encontrada
+  154  fcb_alumno04@UCVVBox:~$ ~$
+  155  ~$: orden no encontrada
+  156  fcb_alumno04@UCVVBox:~$ ~$
+  157  ~$: orden no encontrada
+  158  fcb_alumno04@UCVVBox:~$ ~$
+  159  ~$: orden no encontrada
+  160  fcb_alumno04@UCVVBox:~$ ~$
+  161  ~$: orden no encontrada
+  162  fcb_alumno04@UCVVBox:~$ ~$
+  163  ~$: orden no encontrada
+  164  fcb_alumno04@UCVVBox:~$ ~$
+  165  ~$: orden no encontrada
+  166  fcb_alumno04@UCVVBox:~$
+  167  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  168  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  169  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  170  31: orden no encontrada
+  171  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  172  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  173  fcb_alumno04@UCVVBox:~$ ~$
+  174  ~$: orden no encontrada
+  175  fcb_alumno04@UCVVBox:~$ ~$
+  176  ~$: orden no encontrada
+  177  fcb_alumno04@UCVVBox:~$ ~$
+  178  ~$: orden no encontrada
+  179  fcb_alumno04@UCVVBox:~$ ~$
+  180  ~$: orden no encontrada
+  181  fcb_alumno04@UCVVBox:~$ ~$
+  182  ~$: orden no encontrada
+  183  fcb_alumno04@UCVVBox:~$ ~$
+  184  ~$: orden no encontrada
+  185  fcb_alumno04@UCVVBox:~$ ~$
+  186  ~$: orden no encontrada
+  187  fcb_alumno04@UCVVBox:~$ ~$
+  188  ~$: orden no encontrada
+  189  fcb_alumno04@UCVVBox:~$ ~$
+  190  ~$: orden no encontrada
+  191  fcb_alumno04@UCVVBox:~$
+  192  b_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  193  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  194  fcb_alumno04@UCVVBox:~$  31 17:45:42 2026 from 10.199.1.20
+  195  31: orden no encontrada
+  196  fcb_alumno04@UCVVBox:~$ fcb_alumno04@UCVVBox:~$
+  197  fcb_alumno04@UCVVBox:~$: orden no encontrada
+  198  fcb_alumno04@UCVVBox:~$ ~$
+  199  ~$: orden no encontrada
+  200  fcb_alumno04@UCVVBox:~$ ~$
+  201  ~$: orden no encontrada
+  202  fcb_alumno04@UCVVBox:~$ ~$
+  203  ~$: orden no encontrada
+  204  fcb_alumno04@UCVVBox:~$ ~$
+  205  ~$: orden no encontrada
+  206  fcb_alumno04@UCVVBox:~$ ~$
+  207  ~$: orden no encontrada
+  208  fcb_alumno04@UCVVBox:~$ ~$
+  209  ~$: orden no encontrada
+  210  fcb_alumno04@UCVVBox:~$ ~$
+  211  ~$: orden no encontrada
+  212  fcb_alumno04@UCVVBox:~$ ~$
+  213  ~$: orden no encontrada
+  214  fcb_alumno04@UCVVBox:~$ ~$
+  215  ~$: orden no encontrada
+  216  fcb_alumno04@UCVVBox:~$
+  217  fcb_alumno04@UCVVBox:~/proyecto_biotec/documentacion$
+  218  cat > conceptos_clave.txt
+  219  ls 
+  220  rm conceptos_clave.txt 
+  221  cat > conceptos_clave.txt
+  222  cat conceptos_clave.txt 
+  223  cd ..
+  224  cd scripts/
+  225  history > historial_comandos_B.txt

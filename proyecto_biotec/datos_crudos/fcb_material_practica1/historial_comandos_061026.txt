@@ -1,0 +1,12 @@
+    1  clear
+    2  whoami
+    3  pwd
+    4  cd fcb_material_practica1
+    5  ls
+    6  ls-lh
+    7  ls -lh
+    8  ls -lha
+    9  ls -lah
+   10  history 
+   11  history
+   12  history > historial_comandos_061026.txt
